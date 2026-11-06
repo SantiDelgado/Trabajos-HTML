@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #f1efed; /*  gris */
+    display: flex;
+    justify-content: center; /* horizontal*/
+    align-items: center;     /* vertical */
+    font-family: Arial, sans-serif;
+}
+
+
+.caja {
+    background-color: #e4e1dc;
+    padding: 30px;
+    width: 380px;
+    border: 1px solid #d5d1cc;
+}
+
+.caja h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #222222;
+}
+
+.caja p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}

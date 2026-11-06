@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* las imágenes bajan de línea si no caben */
+    justify-content: center;
+    gap: 20px; /* para dar la distancia entre cada cuadrículas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.galeria img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra */
+}

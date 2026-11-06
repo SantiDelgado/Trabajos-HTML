@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Ocupa el 100% del alto de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header y el Footer */
+header, footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+}
+
+
+main {
+    display: flex;
+    flex: 1; /* main crece y ocupa espacio entre  header y  footer */
+}
+
+/* Nav y Aside */
+nav, aside {
+    background-color: #d9d9d9;
+    padding: 20px;
+    flex: 1; /* 1 ancho cada una */
+}
+
+/* Article */
+article {
+    background-color: #b3b3b3;
+    padding: 20px;
+    flex: 2; /* DOBLE ancho que las laterales */
+}
+
+/* Reordenar */
+nav {
+    order: 1; /* Prime colum Izq*/
+}
+
+article {
+    order: 2; /* Segund colum Cen */
+}
+
+aside {
+    order: 3; /* Terc colum Der*/
+}
