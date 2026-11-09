@@ -1,74 +1,148 @@
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #93d9e9;
+}
+
+.pagina {
+    max-width: 1000px;
     min-height: 100vh;
+    margin: auto;
     display: flex;
-    justify-content: center; /* Centrado horizontal */
-    align-items: center;     /* Centrado vertical */
+    flex-direction: column;
 }
 
-/* las 3 cajas */
-.contenedor-pricing {
-    display: flex;
-    gap: 20px;
-}
+/* Header */
 
-/* Estilo cada caja */
-.caja {
-    background-color: #ffffff;
-    width: 270px;
-    min-height: 480px; /* Altura mínima de 480px */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra */
-    display: flex;
-    flex-direction: column; /* Apila cabecera, lista y botón verticalmente */
-    overflow: hidden; /* Oculta las esquinas de la cabecera para que respete el borde redondeado */
-}
-
-/* Cabecera de la caja */
-.cabecera {
-    background-color: salmon; /* Requisito: Cabecera color salmon */
-    color: #111111;
+header {
+    background-color: salmon;
+    color: white;
     text-align: center;
-    font-weight: bold;
-    padding: 30px 20px;
-    font-size: 16px;
+    padding: 20px;
+    height: 118px;
 }
 
-/* Lista de características */
-.lista {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-grow: 1; /* Magia Flexbox: Empuja el contenedor del botón hacia el fondo */
+header h1 {
+    font-size: 22px;
 }
 
-.lista li {
-    text-align: center;
-    padding: 15px 10px;
-    border-bottom: 1px solid #eeeeee; /* Línea separadora */
+header p {
     font-size: 12px;
-    color: #333333;
 }
 
-/* Contenedor y diseño del botón */
-.boton-contenedor {
-    text-align: center;
-    padding: 25px 20px;
+/* Menu */
+
+nav {
+    background-color: #19b99b;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
 }
 
-.boton {
-    display: inline-block;
-    background-color: #efefef; /* Gris claro */
-    color: #333333;
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.idiomas {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
-    padding: 10px 25px;
-    font-size: 11px;
-    font-weight: bold;
-    border-radius: 4px;
+    font-size: 12px;
 }
 
-.boton:hover {
-    background-color: #e0e0e0;
+/* Contenido principal */
+
+.contenido {
+    display: flex;
+    flex: 1;
+}
+
+/* Barra lateral */
+
+aside {
+    width: 30%;
+    background-color: #eeeeee;
+    padding: 15px;
+}
+
+aside h2 {
+    font-size: 18px;
+}
+
+aside p {
+    font-size: 12px;
+}
+
+.imagen-lateral {
+    background-color: #cccccc;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.imagen-pequena {
+    background-color: #cccccc;
+    height: 100px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+/* Blog */
+
+main {
+    width: 70%;
+    padding: 15px;
+}
+
+article {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 15px;
+}
+
+article h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+article h5 {
+    font-size: 12px;
+}
+
+article p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.imagen-blog {
+    background-color: #cccccc;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 25px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #dddddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
 }

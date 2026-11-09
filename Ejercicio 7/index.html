@@ -1,53 +1,106 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 6 - Pricing Box</title>
+    <title>Mi Página Flexbox</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-<div class="contenedor-pricing">
+<div class="pagina">
 
-    <div class="caja">
-        <div class="cabecera">1 day pass</div>
-        <ul class="lista">
-            <li>Acceso en día seleccionado</li>
-            <li>Participación en workshops</li>
-            <li>Acceso a zona networking</li>
-        </ul>
-        <div class="boton-contenedor">
-            <a href="#" class="boton">COMPRAR</a>
+    <header>
+        <h1>Mi Página Flexbox</h1>
+        <p>Bienvenido a las páginas flexibles.</p>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Quiénes somos</a>
+            <a href="#">Servicios</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
         </div>
+
+        <div class="idiomas">
+            <a href="#">English</a>
+            <a href="#">Euskera</a>
+        </div>
+    </nav>
+
+    <div class="contenido">
+
+        <aside>
+            <h2>El señor Aside</h2>
+
+            <div class="imagen-lateral">400 x 400</div>
+
+            <h4>Un título interesante</h4>
+            <p>
+                Aquí podemos escribir información sobre
+                diferentes temas de nuestra página.
+            </p>
+
+            <div class="imagen-pequena">400 x 200</div>
+
+            <div class="imagen-pequena">400 x 200</div>
+
+        </aside>
+
+        <main>
+
+            <article>
+                <h2>Título del artículo del día</h2>
+                <h5>El día que aprendí Flexbox, 18/01/2019</h5>
+
+                <div class="imagen-blog">668 x 200</div>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+
+                <p>
+                    Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident.
+                </p>
+            </article>
+
+            <article>
+                <h2>Otro post de hace semanas</h2>
+                <h5>Publicado hace unos días</h5>
+
+                <div class="imagen-blog">668 x 200</div>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                </p>
+
+                <p>
+                    Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+            </article>
+
+        </main>
+
     </div>
 
-    <div class="caja">
-        <div class="cabecera">Weekend Pass</div>
-        <ul class="lista">
-            <li>Acceso en fin de semana</li>
-            <li>Participación en workshops</li>
-            <li>Acceso a zona networking</li>
-            <li>Noche de hotel incluida</li>
-        </ul>
-        <div class="boton-contenedor">
-            <a href="#" class="boton">COMPRAR</a>
-        </div>
-    </div>
-
-    <div class="caja">
-        <div class="cabecera">Weekend Pass</div>
-        <ul class="lista">
-            <li>Acceso a todas las ponencias</li>
-            <li>Participación en workshops</li>
-            <li>Acceso a zona networking</li>
-            <li>Noche de hotel incluida</li>
-            <li>Lunch de bienvenida</li>
-        </ul>
-        <div class="boton-contenedor">
-            <a href="#" class="boton">COMPRAR</a>
-        </div>
-    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
 
 </div>
 
